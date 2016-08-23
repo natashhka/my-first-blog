@@ -10,7 +10,18 @@ class Post(models.Model):
             default=timezone.now)
     published_date = models.DateTimeField(
             blank=True, null=True)
-
+#******************************************************************************************
+ #   class Com_message(models.Model):
+ #   sender = models.ForeignKey('auth.User')
+ #   recipient = models.ForeignKey('auth.User')
+ #   title = models.CharField(max_length=100)
+ #   text = models.TextField()
+ #   created_date = models.DateTimeField(default=timezone.now)
+    #models.DateTimeField(
+            #default=timezone.now)
+ #   published_date = models.DateTimeField(
+ #         blank=True, null=True)
+#*****************************************************************************************
     def publish(self):
         self.published_date = timezone.now()
         self.save()

@@ -3,14 +3,27 @@
             <title>My blog</title>
         </head>
         <body>
-        	<h1>My name is Natalia!</h1>
-        	<!--<h2>Andre</h2>*/-->
-        	<h3>********</h3>
-        	<div><em>1</em></div>
-       		<p><strong>this is my first blog</strong></p>
+        <div class="ui message">
+            <div class="header">
+                Changes in Service
+            </div>
+            <p>We just updated our privacy policy here to better service our customers. We recommend reviewing the changes.</p>
+        </div>
+        <div class="ui segment">
+            <h1>My name is Natalia!</h1>
+            <!--<h2>Andre</h2>*/-->
+            <h3>********</h3>
+            <div><em>1</em></div>
+            <p><strong>this is my first blog</strong></p>
             <p><ul><li>hi there!</li><li>
             i wish good luck to all who are going in the way<strong> </strong>!</li></ul>
-            <div><em>2</em></div>
+        </div>
+        	
+            <div>
+            {% for post in posts %}
+               <p> {{ post }}</p>
+            {% endfor %}</div>
+            
             <br />all what you want is <a href="http://happyonwheels.com/blog/wp-content/uploads/2015/04/Latte.jpg">here</a></p>
         </body>
     </html>
