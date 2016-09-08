@@ -1,5 +1,7 @@
 <html>
         <head>
+            <!--<link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
+            <script src="semantic/dist/semantic.min.js"></script>-->
             <title>My blog</title>
         </head>
         <body>
@@ -21,8 +23,10 @@
         	
             <div>
             {% for post in posts %}
-               <p> {{ post }}</p>
-            {% endfor %}</div>
+                <h1><a href="">{{ post.title }}</a></h1>
+                <p>{{ post.text|linebreaksbr }}</p>
+            {% endfor %}
+            </div>
             
             <br />all what you want is <a href="http://happyonwheels.com/blog/wp-content/uploads/2015/04/Latte.jpg">here</a></p>
         </body>

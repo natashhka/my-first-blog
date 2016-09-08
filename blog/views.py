@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from django.utils import timezone
 from .models import Post
+#from .models import Comm
 
 # Create your views here.ghg
 def post_list(request):
